@@ -115,6 +115,10 @@ input {
     color: white;
 }
 
+.menu li:hover img  {
+    background-image: url(images/arrow1.png);
+}
+
 .submenu li:hover  {
     background-color:#fff;
 
