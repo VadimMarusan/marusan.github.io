@@ -24,6 +24,26 @@ h2 {
 	padding-left: 10px;
 }
 
+
+label:before {
+	content: "";
+	width: 10px;
+	height: 10px;
+	border: 1px solid#fff;
+	cursor: pointer;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+input[type=checkbox] {
+	display: none;
+}
+
+input[type=checkbox]:checked + label:before {
+	background-color: #fff;
+}
+
+
 .col-md-3 {
 	width: 270px;
 }
@@ -263,6 +283,11 @@ h2 {
 .device{
 	width: 100%;
 	line-height: 40px;
+}
+
+.label-row {
+	display: flex;
+	flex-direction: row;
 }
 
 .device-name {
