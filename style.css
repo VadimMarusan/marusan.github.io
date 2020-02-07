@@ -67,6 +67,8 @@ input[type=checkbox]:checked + label:before {
 	height: 100px;
 }
 
+
+
 .footer {
 	align-items: center;
 	color: #2c71b8;
@@ -192,6 +194,7 @@ input[type=checkbox]:checked + label:before {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	justify-content: space-between;
 }
 
 .search-field {
@@ -229,10 +232,6 @@ input[type=checkbox]:checked + label:before {
 	justify-content: flex-end;
 }
 
-.basket-container {
-	display: flex;
-	padding-left: 30px;
-}
 
 .basket {
 	width: 40px;
@@ -571,6 +570,56 @@ input[type=checkbox]:checked + label:before {
 	color: #fff;
 }
 
+@media (max-width: 1200px) {
+	
 
+
+	.col-md-3, .product , .product-image, .device-name, .product-description, .product-button, .sort-by, .product-price{
+	width: 224px;
+	}
+
+	.lorem {
+		font-size: 17px;
+	}
+
+	.col-md-6 {
+	width: 473px;
+	}
+	
+	.header, .main, .footer {
+		width: 1170px;
+		margin: 20px;
+    	padding: 0px 10px;
+	}
+
+	.search-field {
+		padding-right: 3px;
+		width: 166px;
+	}
+
+	.search {
+		width: 132px;
+	}
+
+	h2 {
+		font-size: 24px;
+	}
+
+	.show-more {
+    font-size: 18px;
+	}
+
+}
+
+@media (max-width: 992px) {
+	
+}
+
+@media (max-width: 767px) {
+	.ccol-md-12 {
+		max-width: none;
+	}
+	
+}
 
 
