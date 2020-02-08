@@ -570,10 +570,9 @@ input[type=checkbox]:checked + label:before {
 	color: #fff;
 }
 
+
 @media (max-width: 1200px) {
 	
-
-
 	.col-md-3, .product , .product-image, .device-name, .product-description, .product-button, .sort-by, .product-price{
 	width: 224px;
 	}
@@ -612,14 +611,218 @@ input[type=checkbox]:checked + label:before {
 }
 
 @media (max-width: 992px) {
-	
-}
+	.header_burger {
+	display: block;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background-image: url(images/Hamburger_icon.png);
+	background-repeat: no-repeat;
+	z-index: 5;
+	}
 
-@media (max-width: 767px) {
-	.ccol-md-12 {
-		max-width: none;
+	.col-md-3 {
+		width: 100%;
 	}
 	
+	.container2{
+		display: flex;
+		flex-wrap: wrap;
+		width: 900px;
+	}
+
+	
+	
+.slider-container, .footer, .main  {
+		
+		margin: 0 auto;
+	}
+	.main-wrap , .product{
+		width: 100%;
+	}
+
+	.container-sidebar {
+		height: 2150px;
+	}
+
+	.sidebar-button {
+		height: 300px;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	label:before {
+	content: "";
+	width: 40px;
+	height: 40px;
+	border: 1px solid#fff;
+	cursor: pointer;
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.device-checkbox-name {
+	text-align: center;
+}
+
+.current-page {
+	display: none;
+}
+
+	 .show-more, .current-page, .page-name, p {
+		font-size: 60px;
+		line-height: 120px;
+	}
+
+	.submit input {
+		width: 600px;
+		height: 150px;
+		font-size: 50px;
+	}
+
+.container-sort-by {
+	width: 600px;
+	height: 75px;
+}
+
+	.current-page-name {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-items: space-between;
+		height: 300px;
+	}
+
+ .sort-by {
+ 	width: 300px;
+ 	height: 75px;
+ 	font-size: 30px;
+ }
+
+ .product {
+ 	height: 2000px;
+ }
+
+ .product-image {
+ 	width: 100%;
+ 	height: 670px;
+ }
+
+ .product-image1, .product-image2, .product-image8 {
+ 	width: 668px;
+ 	height: 570px;
+	background-size: contain;
+}
+
+.product-image3, .product-image5, .product-image6, .product-image7, .product-image9 {
+	width: 268px;
+ 	height: 470px;
+	background-size: contain;
+}
+
+.product-image4 {
+	width: 468px;
+ 	height: 270px;
+	background-size: contain;
+}
+
+.full-screen {
+	outline: none;
+	background: url(images/icon8.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	z-index: 1;
+}
+
+.full-screen:hover {
+	background: url(images/icon6.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	cursor: pointer;
+	background-color: #2c71b8;
+}
+
+.liked {
+	outline: none;
+	background: url(images/icon5.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 130px;
+	right: 10px;
+	z-index: 1;
+
+}
+
+.liked:hover {
+	background: url(images/icon7.png);
+	cursor: pointer;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-color: #2c71b8;
+}
+
+.product-discription, .device-name, .product-price {
+	width: 100%;
+
+}
+
+.product-discription {
+	height: 700px;
+}
+
+.product-button {
+	width: 100%;
+	height: 400px;
+}
+
+.more-details, .add-to-cart {
+	width: 600px;
+	height: 150px;
+	font-size: 50px;
+}
+
+h2 {
+	font-size: 70px;
+}
+
+.footer {
+	height: 200px;
+}
+
+ p.lorem, .load-more, .footer{
+	font-size: 60px;
+	line-height: 80px;
+}
+
+.product-price {
+	height: 120px;
+	font-size: 120px;
+	line-height: 100px;
+}
+
+.add-to-cart {
+    background-image: none;
+}
+
+}
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+
+
 }
 
 
