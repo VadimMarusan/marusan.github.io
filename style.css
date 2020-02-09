@@ -484,7 +484,7 @@ input[type=checkbox]:checked + label:before {
 	background-color: #2c71b8;
 }
 
-.liked {
+.like {
 	outline: 1px solid #2c71b8;
 	background: url(images/icon5.png);
 	background-repeat: no-repeat;
@@ -498,7 +498,7 @@ input[type=checkbox]:checked + label:before {
 
 }
 
-.liked1 {
+.like:hover, .liked {
 	background: url(images/icon7.png);
 	cursor: pointer;
 	background-repeat: no-repeat;
