@@ -7,36 +7,38 @@ let likeButtons = document.querySelectorAll(".like")
     	likeButtons[i].classList.toggle("liked")
     })
   } 
-	let minCount = 1;
-	let maxCount = 5;
 
-	function toggleButtonState(count) {
+			
+  function addHandlers(product_quantity) {
+	  let decrementBtn = product_quantity.querySelector(".decrement_btn");
+	  let number = product_quantity.querySelector(".number");
+	  let incrementBtn = product_quantity.querySelector(".increment_btn");
+
+	  let minCount = 1;
+	  let maxCount = 10;
+
+	  let currentValue = +number.value;
+			
+	  toggleButtonState(currentValue)
+
+  function toggleButtonState(count) {
 					decrementBtn.disabled = count <=minCount;
 					incrementBtn.disabled = count >=maxCount;
 			}
 
-	let decrementBtn = document.querySelectorAll(".decrement-btn")[0],
-	    incrementBtn = document.querySelectorAll(".increment-btn")[0],
-		quaintityInput = document.querySelectorAll(".product-quantity input")[0];
+  incrementBtn.addEventListener("click", function() {
+			number.value++;
+			toggleButtonState(number.value)
+  });
+  decrementBtn.addEventListener("click", function() {
+			 number.value--;	
+			 toggleButtonState(number.value)
+  });
 
-		let currentValue = +quaintityInput.value;
-			
-			toggleButtonState(currentValue)
+}
 
-		incrementBtn.addEventListener("click", function() {
-			let currentValue = +quaintityInput.value;
-			let nextValue = currentValue+1;
-			quaintityInput.value = nextValue;
-			toggleButtonState(nextValue)
-		})
-			decrementBtn.addEventListener("click", function() {
-			let currentValue = +quaintityInput.value;
-			let nextValue = currentValue-1;
-			quaintityInput.value = nextValue;
-			
-			toggleButtonState(nextValue)
-		})
-
+let counts = document.querySelectorAll(".product_quantity");
+counts.forEach(addHandlers);
 
 
 
