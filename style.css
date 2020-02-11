@@ -25,6 +25,7 @@ h2 {
 }
 
 
+
 label:before {
 	content: "";
 	width: 10px;
@@ -359,14 +360,7 @@ input[type=checkbox]:checked + label:before {
 	align-items: center;
 }
 
-.sort-by {
-	width: 270px;
-	height: 40px;
-	background: #2c71b8;
-	border: 1px solid white;
-	color: white;
-	font-size: 16px;
-}
+
 
 .container-product{
 	display: flex;
